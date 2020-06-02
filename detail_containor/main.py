@@ -2,6 +2,7 @@ import random
 
 
 def main():
+    master_list = {}
     details = []
     #names = []
     #phone_nos = []
@@ -47,25 +48,18 @@ def main():
             print('pls enter your email')
     
 
-    while True:
-        data = input('Do you want the data in the form of list or in simple form: ')
-        if data == 'list':
-            details.append(name)
-            details.append(phone_no)
-            details.append(email)
-            details = str(details)
-            fname.write(details)
-            break
-        elif data == "simple form" or data == 'simple':
-            fname.write("Name: " + name + "\n")
-            fname.write("Phone No: " + phone_no + "\n")
-            fname.write("Email: " + email)
-            break
-        else:
-            print('just type if you want the data in the form of list or in simple form')
-
-
+    details.append(name)
+    details.append(phone_no)
+    details.append(email)
+    details = str(details)
+    master_list[details] = details
+    master_list = str(master_list)
+    fname.write(master_list)
     
+    #names.append(name)
+    #phone_nos.append(phone_no)
+    #emails.append(email)
+
     fname.write("\n" + "\n")
 
 if __name__ == "__main__":
