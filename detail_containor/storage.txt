@@ -1,3 +1,0 @@
-{
-    ['bhu', '9898989898', 'zenitsu@gmail.com']
-}
