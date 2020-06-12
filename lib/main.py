@@ -4,9 +4,6 @@ import random
 def main():
     master_contact = {}
     details = []
-    #names = []
-    #phone_nos = []
-    #emails = []
     fname = open('storage.txt', "a")
     while True:
         name = input('Enter the persons name for which you want to save the contact: ')
@@ -53,20 +50,10 @@ def main():
     
     contact = 'contact_1'
 
-    #for contact in master_contact:
-    #    cantact = 'contact_2'
+    
     master_contact[contact] = details
     master_contact = str(master_contact)
     fname.write(master_contact)
-    #details = str(details)
-    #fname.write(details)
-    #fname.write(name + "\n")
-    #fname.write(name + ' phone no. :' + phone_no + "\n")
-    #fname.write(name + ' email: ' + email)
-    #names.append(name)
-    #phone_nos.append(phone_no)
-    #emails.append(email)
-
     fname.write("\n" + "\n")
     
 if __name__ == "__main__":
